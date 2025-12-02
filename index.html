@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-semibold text-blue-600">BrandName</div>
+
+      <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Features</a>
+        <a href="#" class="hover:text-blue-600">Pricing</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow-inner">
+      <div class="px-6 pb-4 pt-2 space-y-4 text-gray-700 font-medium">
+        <a href="#" class="block hover:text-blue-600">Home</a>
+        <a href="#" class="block hover:text-blue-600">Features</a>
+        <a href="#" class="block hover:text-blue-600">Pricing</a>
+        <a href="#" class="block hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SPACER -->
+  <div class="h-20"></div>
+
+  <!-- HERO SECTION -->
+  <section class="py-20 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          Build Better Websites with Smarter Prompts
+        </h1>
+        <p class="text-gray-600 text-lg mb-8">
+          Our AI-engineered prompts consistently deliver clean, responsive, and modern code sections without the usual cleanup.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            View Case Studies
+          </a>
+          <a href="#" class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            Start Free Trial
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <img src="https://plus.unsplash.com/premium_photo-1676998931123-75789162f170?q=80&w=1770&auto=format&fit=crop" 
+             alt="Hero Image" class="rounded-xl shadow-lg w-full h-auto" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">
+        Features That Boost Your Workflow
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+
+        <!-- Feature 1 -->
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <div class="mb-4 flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 12h18M3 19h18" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-2">Responsive By Default</h3>
+          <p class="text-gray-600">Code is tested for mobile and desktop layout on generation.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <div class="mb-4 flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-2">Tailwind Integration</h3>
+          <p class="text-gray-600">Generates code with production-ready Tailwind CSS classes.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <div class="mb-4 flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6a2 2 0 012-2h6" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-2">Reusable Components</h3>
+          <p class="text-gray-600">Prompts are structured to be used over and over with new content.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <div class="mb-4 flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-xl mb-2">High UI Quality</h3>
+          <p class="text-gray-600">Focuses on good alignment, spacing, and modern design aesthetics.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+        Get in Touch and Ask Us Anything
+      </h2>
+
+      <form action="#" method="POST" class="bg-white p-10 rounded-xl shadow space-y-6">
+        
+        <div>
+          <label class="block font-medium text-gray-700 mb-2">Name</label>
+          <input type="text" required class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        </div>
+
+        <div>
+          <label class="block font-medium text-gray-700 mb-2">Email</label>
+          <input type="email" required class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        </div>
+
+        <div>
+          <label class="block font-medium text-gray-700 mb-2">Message</label>
+          <textarea required rows="5" class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+        </div>
+
+        <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <div>
+        <h4 class="font-semibold text-white mb-4">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#" class="hover:text-white">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-white mb-4">Social</h4>
+        <div class="flex space-x-4">
+          <svg class="w-6 h-6 hover:text-white cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3z"/>
+          </svg>
+          <svg class="w-6 h-6 hover:text-white cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016.5 3a4.48 4.48 0 00-4.47 4.48c0 .35.04.7.11 1.03A12.94 12.94 0 013 4.1S-.36 12.07 8.29 16.16A13.37 13.37 0 011.64 18c8.65 4.75 19.46 0 19.46-11.21 0-.17 0-.35-.01-.52A7.72 7.72 0 0023 3z"/>
+          </svg>
+          <svg class="w-6 h-6 hover:text-white cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M22 12l-4-4m0 0l-4 4m4-4v12M2 12l4 4m0 0l4-4m-4 4V0"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="col-span-1 sm:col-span-2 lg:col-span-2">
+        <p class="text-gray-400 mt-8 lg:mt-0">
+          © 2024 PromptEngineers Inc. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
